@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TikTok Video Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TikTok Video Downloader</h1>
+
+    <label for="url">TikTok share URL:</label>
+    <input id="url" type="text" placeholder="https://www.tiktok.com/@user/video/123..." />
+
+    <div class="actions">
+      <button id="fetchBtn">Get Video</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div id="result" class="result" style="display:none;">
+      <p>Video found: <span id="videoUrl"></span></p>
+      <a id="downloadLink" href="#" download target="_blank">Download Video</a>
+    </div>
+
+    <p class="small">Note: Use only for public videos and with permission. Respect copyright & TikTok Terms.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
